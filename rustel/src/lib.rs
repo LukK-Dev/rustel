@@ -1,5 +1,6 @@
 mod log;
 
-pub mod errors;
 pub mod application;
 pub mod entry_point;
+pub mod errors;
+pub mod events;
