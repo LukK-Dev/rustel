@@ -1,9 +1,7 @@
-use log::info;
-
-use crate::{application::Application, log::init_logger, events::{key_event::KeyPressedEvent, event::{Event, EventCategory}}};
+use crate::{application::Application, log::init_logger};
 
 pub fn run(mut application: impl Application) {
-    init_logger().expect("Failed to initialize Logger");
+    init_logger().unwrap();
 
-    application.run().expect("Failed to run Application");
+    application.run().unwrap();
 }
