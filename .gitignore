@@ -1,0 +1,7 @@
+source: https://github.com/github/gitignore/blob/main/Rust.gitignore
+
+debug/
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
