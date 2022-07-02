@@ -1,7 +1,5 @@
 #![allow(dead_code)]
-use rustel::application::Application;
-use rustel::entry_point::run;
-use rustel::errors::ApplicationError;
+use rustel::prelude::*;
 
 struct Sandbox;
 
